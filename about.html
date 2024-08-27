@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tablingos | About Us</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							primary: "#7A63FF",
+							secondary: "#FF63B8",
+							tertiary: "#63FFEF",
+						},
+					},
+				},
+			};
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		/>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+			body {
+				font-family: "Poppins", sans-serif;
+				display: flex;
+				flex-direction: column;
+				min-height: 100vh;
+			}
+			.gradient-grid {
+				background-image: linear-gradient(
+						to right,
+						rgba(255, 255, 255, 0.1) 1px,
+						transparent 1px
+					),
+					linear-gradient(
+						to bottom,
+						rgba(255, 255, 255, 0.1) 1px,
+						transparent 1px
+					),
+					linear-gradient(140deg, #7a63ff, #ffffff);
+				background-size: 40px 40px, 40px 40px, 100% 100%;
+			}
+			.glass {
+				background: rgba(255, 255, 255, 0.25);
+				backdrop-filter: blur(10px);
+				border-radius: 10px;
+				border: 1px solid rgba(255, 255, 255, 0.18);
+			}
+			main {
+				flex: 1;
+			}
+			.team-scroll {
+				overflow-x: auto;
+				white-space: nowrap;
+				-webkit-overflow-scrolling: touch;
+				scrollbar-width: none; /* Firefox */
+				-ms-overflow-style: none; /* Internet Explorer 10+ */
+			}
+			.team-scroll::-webkit-scrollbar {
+				/* WebKit */
+				width: 0;
+				height: 0;
+			}
+			.header-transparent {
+				background-color: transparent;
+				backdrop-filter: none;
+			}
+		</style>
+	</head>
+	<body class="font-sans bg-gray-50">
+		<header
+			class="fixed top-0 left-0 right-0 bg-opacity-80 backdrop-blur-md z-50 transition-all duration-300"
+			id="main-header"
+		>
+			<nav class="container mx-auto px-6 py-3">
+				<div class="flex justify-between items-center">
+					<a href="index.html" class="text-2xl font-bold">
+						<img
+							src="res/Logo.svg"
+							alt="Tablingos Logo"
+							class="h-8"
+							id="header-logo"
+						/>
+					</a>
+					<div class="hidden md:flex space-x-6" id="desktop-menu">
+						<a
+							href="features.html"
+							class="text-gray-800 hover:text-primary transition duration-300"
+							>Features</a
+						>
+						<!-- <a
+							href="pricing.html"
+							class="text-gray-800 hover:text-primary transition duration-300"
+							>Pricing</a
+						> -->
+						<a
+							href="blog.html"
+							class="text-gray-800 hover:text-primary transition duration-300"
+							>Blog</a
+						>
+						<a
+							href="about.html"
+							class="text-gray-800 hover:text-primary transition duration-300"
+							>About</a
+						>
+						<a
+							href="contact.html"
+							class="text-gray-800 hover:text-primary transition duration-300"
+							>Contact</a
+						>
+					</div>
+					<button
+						class="md:hidden text-gray-800"
+						id="mobile-menu-button"
+					>
+						<svg
+							class="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h16"
+							></path>
+						</svg>
+					</button>
+				</div>
+				<div class="md:hidden mt-4 hidden" id="mobile-menu">
+					<a
+						href="features.html"
+						class="block py-2 text-gray-800 hover:text-primary transition duration-300"
+						>Features</a
+					>
+					<a
+						href="pricing.html"
+						class="block py-2 text-gray-800 hover:text-primary transition duration-300"
+						>Pricing</a
+					>
+					<a
+						href="blog.html"
+						class="block py-2 text-gray-800 hover:text-primary transition duration-300"
+						>Blog</a
+					>
+					<a
+						href="about.html"
+						class="block py-2 text-gray-800 hover:text-primary transition duration-300"
+						>About</a
+					>
+					<a
+						href="contact.html"
+						class="block py-2 text-gray-800 hover:text-primary transition duration-300"
+						>Contact</a
+					>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<!-- Hero section -->
+			<section
+				class="gradient-grid text-white min-h-screen flex items-center relative overflow-hidden"
+			>
+				<div class="container mx-auto px-6 py-20 relative z-10">
+					<div class="text-center" data-aos="fade-up">
+						<h1 class="text-4xl md:text-5xl font-bold mb-4">
+							About Tablingos
+						</h1>
+						<p class="text-xl mb-8">
+							Revolutionizing tabular data processing for
+							businesses worldwide
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Our Mission section -->
+			<section class="py-20 text-center">
+				<div class="container mx-auto px-6">
+					<h2 class="text-3xl font-bold mb-8" data-aos="fade-up">
+						Our Mission
+					</h2>
+					<div class="max-w-3xl mx-auto">
+						<p
+							class="text-2xl leading-relaxed"
+							data-aos="fade-up"
+							data-aos-delay="200"
+						>
+							To pioneer innovative solutions that guarantee clean
+							and usable data, empowering people and businesses to
+							thrive in a data-driven future.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Team section -->
+			<section class="py-20">
+				<div class="container mx-auto px-6">
+					<h2
+						class="text-3xl font-bold text-center mb-12"
+						data-aos="fade-up"
+					>
+						Meet Our Team
+					</h2>
+					<div
+						class="team-scroll flex space-x-6 pb-6 mx-auto w-fit"
+						data-aos="fade-up"
+					>
+						<div
+							class="flex-shrink-0 w-64 bg-white p-6 rounded-lg shadow-md"
+						>
+							<img
+								src="res/IKB_SQUARE.jpeg"
+								alt="Ibrahim Khawar"
+								class="w-32 h-32 object-cover rounded-full mx-auto mb-4"
+							/>
+							<h3 class="text-xl font-bold mb-2 text-center">
+								Ibrahim Khawar
+							</h3>
+							<p class="text-gray-600 text-center">
+								Founder & CEO
+							</p>
+						</div>
+						<div
+							class="flex-shrink-0 w-64 bg-white p-6 rounded-lg shadow-md"
+						>
+							<img
+								src="res/AK_SQUARE.png"
+								alt="Aasim Khwaja"
+								class="w-32 h-32 object-cover rounded-full mx-auto mb-4"
+							/>
+							<h3 class="text-xl font-bold mb-2 text-center">
+								Aasim Ul Haq
+							</h3>
+							<p class="text-gray-600 text-center">CMO</p>
+						</div>
+						<div
+							class="flex-shrink-0 w-64 bg-white p-6 rounded-lg shadow-md"
+						>
+							<img
+								src=""
+								alt="Ibrahim Ansari"
+								class="w-32 h-32 object-cover rounded-full mx-auto mb-4"
+							/>
+							<h3 class="text-xl font-bold mb-2 text-center">
+								Ibrahim Ansari
+							</h3>
+							<p class="text-gray-600 text-center">
+								Project Manager
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA section -->
+			<section class="gradient-grid text-white py-20">
+				<div class="container mx-auto px-6 text-center">
+					<h2 class="text-3xl font-bold mb-4" data-aos="fade-up">
+						It's time to take control of your data.
+					</h2>
+					<p class="mb-8" data-aos="fade-up" data-aos-delay="200">
+						Are you ready?
+					</p>
+					<a
+						href="https://dggj00jhglh.typeform.com/to/btTB3adb"
+						target="_blank"
+						class="bg-white text-primary px-8 py-3 rounded-full font-bold hover:bg-opacity-90 transition duration-300 inline-block"
+						data-aos="fade-up"
+						data-aos-delay="400"
+						>Book a Demo</a
+					>
+				</div>
+			</section>
+		</main>
+
+		<footer class="bg-gray-800 text-white py-10">
+			<div class="container mx-auto px-6">
+				<div class="flex flex-wrap justify-between">
+					<div class="w-full md:w-1/4 mb-6 md:mb-0">
+						<h3 class="text-xl font-bold mb-2">Tablingos</h3>
+						<p class="text-gray-400">Making data easier to use.</p>
+					</div>
+					<div class="w-full md:w-1/4 mb-6 md:mb-0">
+						<h3 class="text-xl font-bold mb-2">Quick Links</h3>
+						<ul>
+							<li>
+								<a
+									href="#"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Home</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Features</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Pricing</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Blog</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="w-full md:w-1/4 mb-6 md:mb-0">
+						<h3 class="text-xl font-bold mb-2">Connect</h3>
+						<ul>
+							<li>
+								<a
+									href="#"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Twitter</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Facebook</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>LinkedIn</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Instagram</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			AOS.init({
+				duration: 1000,
+				once: true,
+			});
+
+			const header = document.getElementById("main-header");
+			const hero = document.querySelector(".gradient-grid");
+			const headerLogo = document.getElementById("header-logo");
+			const headerLinks = header.querySelectorAll("a");
+			const mobileMenuButton =
+				document.getElementById("mobile-menu-button");
+			const mobileMenu = document.getElementById("mobile-menu");
+
+			function updateHeaderStyle() {
+				const heroBottom = hero.getBoundingClientRect().bottom;
+				if (heroBottom > header.offsetHeight) {
+					headerLogo.style.filter = "brightness(0) invert(1)";
+					mobileMenuButton.classList.remove("text-gray-800");
+					mobileMenuButton.classList.add("text-white");
+					headerLinks.forEach((link) => {
+						link.classList.remove(
+							"text-gray-800",
+							"hover:text-primary"
+						);
+						link.classList.add("text-white", "hover:text-gray-200");
+					});
+				} else {
+					headerLogo.style.filter = "none";
+					mobileMenuButton.classList.remove("text-white");
+					mobileMenuButton.classList.add("text-gray-800");
+					headerLinks.forEach((link) => {
+						link.classList.add(
+							"text-gray-800",
+							"hover:text-primary"
+						);
+						link.classList.remove(
+							"text-white",
+							"hover:text-gray-200"
+						);
+					});
+				}
+			}
+
+			mobileMenuButton.addEventListener("click", () => {
+				mobileMenu.classList.toggle("hidden");
+			});
+
+			window.addEventListener("scroll", updateHeaderStyle);
+			window.addEventListener("resize", updateHeaderStyle);
+			updateHeaderStyle(); // Call once on load
+		</script>
+	</body>
+</html>

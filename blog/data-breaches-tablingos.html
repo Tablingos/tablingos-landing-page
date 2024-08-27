@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tablingos | Data Breaches</title>
+		<link rel="icon" type="image/x-icon" href="../favicon.ico" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							primary: "#7A63FF",
+							secondary: "#FF63B8",
+							tertiary: "#63FFEF",
+						},
+					},
+				},
+			};
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		/>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+			body {
+				font-family: "Poppins", sans-serif;
+				display: flex;
+				flex-direction: column;
+				min-height: 100vh;
+			}
+			.gradient-grid {
+				background-image: linear-gradient(
+						to right,
+						rgba(255, 255, 255, 0.1) 1px,
+						transparent 1px
+					),
+					linear-gradient(
+						to bottom,
+						rgba(255, 255, 255, 0.1) 1px,
+						transparent 1px
+					),
+					linear-gradient(140deg, #7a63ff, #ffffff);
+				background-size: 40px 40px, 40px 40px, 100% 100%;
+			}
+			.glass {
+				background: rgba(255, 255, 255, 0.25);
+				backdrop-filter: blur(10px);
+				border-radius: 10px;
+				border: 1px solid rgba(255, 255, 255, 0.18);
+			}
+			main {
+				flex: 1;
+			}
+			.header-transparent {
+				background-color: transparent;
+				backdrop-filter: none;
+			}
+			.first-letter::first-letter {
+				float: left;
+				font-size: 3.5em;
+				line-height: 0.8;
+				padding-right: 0.1em;
+				padding-top: 0.1em;
+			}
+			h3 {
+				margin-top: 3em;
+				margin-bottom: 1em;
+			}
+		</style>
+	</head>
+	<body class="font-sans bg-gray-50">
+		<header
+			class="fixed top-0 left-0 right-0 bg-opacity-80 backdrop-blur-md z-50 transition-all duration-300"
+			id="main-header"
+		>
+			<nav class="container mx-auto px-6 py-3">
+				<div class="flex justify-between items-center">
+					<a href="../index.html" class="text-2xl font-bold">
+						<img
+							src="../res/Logo.svg"
+							alt="Tablingos Logo"
+							class="h-8"
+							id="header-logo"
+						/>
+					</a>
+					<div class="hidden md:flex space-x-6" id="desktop-menu">
+						<a
+							href="../features.html"
+							class="text-gray-800 hover:text-primary transition duration-300"
+							>Features</a
+						>
+						<a
+							href="../pricing.html"
+							class="text-gray-800 hover:text-primary transition duration-300"
+							>Pricing</a
+						>
+						<a
+							href="../blog.html"
+							class="text-gray-800 hover:text-primary transition duration-300"
+							>Blog</a
+						>
+						<a
+							href="../about.html"
+							class="text-gray-800 hover:text-primary transition duration-300"
+							>About</a
+						>
+						<a
+							href="../contact.html"
+							class="text-gray-800 hover:text-primary transition duration-300"
+							>Contact</a
+						>
+					</div>
+					<button
+						class="md:hidden text-gray-800"
+						id="mobile-menu-button"
+					>
+						<svg
+							class="w-6 h-6"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M4 6h16M4 12h16M4 18h16"
+							></path>
+						</svg>
+					</button>
+				</div>
+				<div class="md:hidden mt-4 hidden" id="mobile-menu">
+					<a
+						href="features.html"
+						class="block py-2 text-gray-800 hover:text-primary transition duration-300"
+						>Features</a
+					>
+					<a
+						href="pricing.html"
+						class="block py-2 text-gray-800 hover:text-primary transition duration-300"
+						>Pricing</a
+					>
+					<a
+						href="blog.html"
+						class="block py-2 text-gray-800 hover:text-primary transition duration-300"
+						>Blog</a
+					>
+					<a
+						href="about.html"
+						class="block py-2 text-gray-800 hover:text-primary transition duration-300"
+						>About</a
+					>
+					<a
+						href="contact.html"
+						class="block py-2 text-gray-800 hover:text-primary transition duration-300"
+						>Contact</a
+					>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<!-- Hero section -->
+			<section
+				class="gradient-grid text-white min-h-screen flex items-center relative overflow-hidden"
+			>
+				<div class="container mx-auto px-6 py-20 relative z-10">
+					<div class="text-center" data-aos="fade-up">
+						<h1 class="text-4xl md:text-5xl font-bold mb-4">
+							Data Breaches: What You Need to Know
+						</h1>
+					</div>
+				</div>
+			</section>
+
+			<img
+				src="../res/blog/data-breach-tablingos.jpeg"
+				alt="Data Breaches"
+				class="w-2/3 mx-auto mt-10 rounded-lg border-2 border-black"
+			/>
+
+			<article class="container mx-auto px-20 lg:px-40 py-20 text-lg">
+				<p class="first-letter">
+					In recent months, several high-profile companies have fallen
+					victim to devastating data breaches, exposing the sensitive
+					information of millions of customers. As a leading data
+					management platform, Tablingos is committed to helping its
+					customers navigate these turbulent waters and safeguard
+					their data.
+				</p>
+				<br />
+
+				<h3 class="text-2xl font-semibold mb-5 mt-8">
+					The Okta Breach
+				</h3>
+				<p>
+					Okta, the identity and access management company, reported a
+					security breach in October 2023 where hackers gained access
+					to private customer information through its customer support
+					management system. The attackers were able to view content
+					uploaded by Okta customers, including HTTP archive (HAR)
+					files that can contain sensitive data such as cookies and
+					session tokens. Okta has since revoked embedded session
+					tokens and advised customers to sanitize credentials within
+					HAR files before sharing.
+				</p>
+				<br />
+
+				<p>
+					The breach at Okta is particularly concerning as the company
+					is a trusted provider of identity and access management
+					services to thousands of organizations worldwide. The fact
+					that hackers were able to infiltrate Okta's systems and
+					access customer data highlights the vulnerability of even
+					the most secure platforms.
+				</p>
+				<br />
+
+				<p>
+					One of the key lessons from the Okta breach is the
+					importance of maintaining strict access controls and
+					monitoring for suspicious activity within customer support
+					systems. Okta has acknowledged that the breach occurred due
+					to a lapse in its own security protocols, and the company
+					has since implemented additional measures to prevent similar
+					incidents in the future.
+				</p>
+				<br />
+
+				<h3 class="text-2xl font-semibold mb-5 mt-8">
+					The 23andMe Breach
+				</h3>
+				<p>
+					In December 2023, genetic testing firm 23andMe revealed that
+					a hacker or hackers had accessed nearly seven million
+					customer profiles, including ancestry reports, zip codes,
+					and birth years. The breach occurred through a technique
+					called credential stuffing, where hackers reused old
+					usernames and passwords from other websites to break into
+					23andMe accounts. 23andMe has since required all customers
+					to reset their passwords and use two-step verification.
+				</p>
+				<br />
+
+				<p>
+					The 23andMe breach is a stark reminder of the importance of
+					robust password management and the need for multi-factor
+					authentication. Credential stuffing attacks are becoming
+					increasingly common, and companies must take proactive steps
+					to protect their customers' accounts.
+				</p>
+				<br />
+
+				<p>
+					For Tablingos customers, this breach highlights the
+					importance of implementing strong password policies and
+					encouraging the use of two-factor authentication. By
+					ensuring that your customers' login credentials are secure,
+					you can significantly reduce the risk of similar breaches
+					occurring within your own organization.
+				</p>
+				<br />
+
+				<h3 class="text-2xl font-semibold mb-5 mt-8">
+					The Air Europa Breach
+				</h3>
+				<p>
+					Most recently, in March 2024, International Consolidated
+					Airlines Group S.A. warned Air Europa customers that their
+					personal data, including passport information, identity
+					cards, birthdays, names, nationalities, and phone numbers,
+					may have been compromised due to a security incident
+					discovered in October 2023.
+				</p>
+				<br />
+
+				<p>
+					The Air Europa breach is particularly concerning as it
+					involves the exposure of sensitive personal information,
+					such as passport details. This type of data can be used for
+					identity theft, fraud, and other malicious activities,
+					putting affected customers at significant risk.
+				</p>
+				<br />
+
+				<p>
+					For Tablingos customers, the Air Europa breach underscores
+					the importance of implementing robust data security
+					measures, particularly when handling sensitive personal
+					information. This may include encryption, access controls,
+					and regular security audits to ensure that your customers'
+					data is protected from unauthorized access or misuse.
+				</p>
+				<br />
+
+				<h3 class="text-2xl font-semibold mb-5 mt-8">
+					Tablingos' Approach to Data Security
+				</h3>
+				<p>
+					As a data management platform, Tablingos understands the
+					importance of data security and integrity. Our features,
+					such as robust data validation and transformation rules, can
+					help ensure the successful onboarding of your data while
+					maintaining its confidentiality. Additionally, our workspace
+					functionality allows you to segregate data across multiple
+					projects, further enhancing security.
+				</p>
+				<br />
+
+				<p>
+					In light of these recent data breaches, Tablingos encourages
+					its customers to be vigilant in their data management
+					practices. Utilize Tablingos' powerful tools to validate and
+					transform your data, and consider creating multiple
+					workspaces to compartmentalize sensitive information. By
+					taking proactive steps to secure your data, you can mitigate
+					the risks of falling victim to the kind of devastating
+					breaches experienced by Okta, 23andMe, and Air Europa.
+				</p>
+				<br />
+
+				<p>
+					One of the key advantages of using Tablingos is our
+					commitment to data security and privacy. Our platform is
+					designed with robust security measures, including
+					encryption, access controls, and audit logging, to ensure
+					that your data remains safe and secure. Additionally, our
+					team of data experts is constantly monitoring for emerging
+					threats and implementing the latest security best practices
+					to protect our customers' information.
+				</p>
+				<br />
+
+				<p>
+					For Tablingos customers, the recent data breaches serve as a
+					stark reminder of the importance of partnering with a
+					trusted data management provider. By leveraging Tablingos'
+					powerful tools and security features, you can rest assured
+					that your data is in good hands, and you can focus on
+					growing your business without the constant worry of a
+					potential data breach.
+				</p>
+				<br />
+
+				<h3 class="text-2xl font-semibold mb-5 mt-8">Conclusion</h3>
+				<p>
+					The data breaches experienced by Okta, 23andMe, and Air
+					Europa serve as a sobering reminder of the ever-evolving
+					threat landscape that businesses and their customers face.
+					As a leading data management platform, Tablingos is
+					committed to helping its customers navigate these challenges
+					and safeguard their data.
+				</p>
+				<br />
+
+				<p>
+					By utilizing Tablingos' robust data validation,
+					transformation, and workspace features, you can take
+					proactive steps to secure your data and mitigate the risks
+					of a devastating breach. Additionally, our team of data
+					experts is dedicated to staying ahead of the curve,
+					implementing the latest security best practices to protect
+					our customers' information.
+				</p>
+				<br />
+
+				<p>
+					As you continue to grow your business and rely on
+					data-driven insights, it's crucial to partner with a trusted
+					data management provider like Tablingos. By doing so, you
+					can focus on your core operations, confident that your data
+					is in safe hands and protected from the kind of breaches
+					that have impacted Okta, 23andMe, and Air Europa.
+				</p>
+			</article>
+		</main>
+		<footer class="bg-gray-800 text-white py-10">
+			<div class="container mx-auto px-6">
+				<div class="flex flex-wrap justify-between">
+					<div class="w-full md:w-1/4 mb-6 md:mb-0">
+						<h3 class="text-xl font-bold mb-2">Tablingos</h3>
+						<p class="text-gray-400">Making data easier to use.</p>
+					</div>
+					<div class="w-full md:w-1/4 mb-6 md:mb-0">
+						<h3 class="text-xl font-bold mb-2">Quick Links</h3>
+						<ul>
+							<li>
+								<a
+									href="../index.html"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Home</a
+								>
+							</li>
+							<li>
+								<a
+									href="../features.html"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Features</a
+								>
+							</li>
+							<li>
+								<!-- <a
+									href="../pricing.html"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Pricing</a
+								> -->
+							</li>
+							<li>
+								<a
+									href="../blog.html"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Blog</a
+								>
+							</li>
+							<li>
+								<a
+									href="../contact.html"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Contact</a
+								>
+							</li>
+							<li>
+								<a
+									href="../about.html"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>About</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://dggj00jhglh.typeform.com/to/btTB3adb"
+									target="_blank"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Book a Demo</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://tablingos.gitbook.io"
+									target="_blank"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Documentation</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="w-full md:w-1/4 mb-6 md:mb-0">
+						<h3 class="text-xl font-bold mb-2">Connect</h3>
+						<ul>
+							<li>
+								<a
+									href="https://x.com/Tablingos"
+									target="_blank"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Twitter</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.linkedin.com/company/tablingos"
+									target="_blank"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>LinkedIn</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://dggj00jhglh.typeform.com/to/ynXZdyCB"
+									target="_blank"
+									class="text-gray-400 hover:text-white transition duration-300"
+									>Feedback</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div
+					class="border-t border-gray-700 mt-8 pt-8 text-sm text-center text-gray-400"
+				>
+					© 2024 Tablingos. All rights reserved.
+				</div>
+			</div>
+		</footer>
+		<script>
+			AOS.init({
+				duration: 1000,
+				once: true,
+			});
+
+			const header = document.getElementById("main-header");
+			const hero = document.querySelector(".gradient-grid");
+			const headerLogo = document.getElementById("header-logo");
+			const headerLinks = header.querySelectorAll("a");
+			const mobileMenuButton =
+				document.getElementById("mobile-menu-button");
+			const mobileMenu = document.getElementById("mobile-menu");
+
+			function updateHeaderStyle() {
+				const heroBottom = hero.getBoundingClientRect().bottom;
+				if (heroBottom > header.offsetHeight) {
+					headerLogo.style.filter = "brightness(0) invert(1)";
+					mobileMenuButton.classList.remove("text-gray-800");
+					mobileMenuButton.classList.add("text-white");
+					headerLinks.forEach((link) => {
+						link.classList.remove(
+							"text-gray-800",
+							"hover:text-primary"
+						);
+						link.classList.add("text-white", "hover:text-gray-200");
+					});
+				} else {
+					headerLogo.style.filter = "none";
+					mobileMenuButton.classList.remove("text-white");
+					mobileMenuButton.classList.add("text-gray-800");
+					headerLinks.forEach((link) => {
+						link.classList.add(
+							"text-gray-800",
+							"hover:text-primary"
+						);
+						link.classList.remove(
+							"text-white",
+							"hover:text-gray-200"
+						);
+					});
+				}
+			}
+
+			mobileMenuButton.addEventListener("click", () => {
+				mobileMenu.classList.toggle("hidden");
+			});
+
+			window.addEventListener("scroll", updateHeaderStyle);
+			window.addEventListener("resize", updateHeaderStyle);
+			updateHeaderStyle(); // Call once on load
+		</script>
+	</body>
+</html>
